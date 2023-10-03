@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking js</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="container min-h-screen w-3/4 bg-[#161D2D] mx-auto">
+    <h1 class="text-5xl text-center text-red-400 font-semibold pt-8">Online <span class="text-green-400 font-light">Banking</span></h1>
+    <!-- input text area -->
+    <div class="flex flex-row gap-2 pt-8">
+        <!-- total deposit part -->
+        <div class="basis-1/3 bg-lime-400 py-8 text-white rounded-xl box-border">
+            <h2 class="text-3xl text-center italic">Deposite</h2>
+            <h1 class="text-4xl text-center">$<span id="total-deposite">000</span></h1>
+        </div>
+        <!-- total withdraw part -->
+        <div class="basis-1/3 bg-violet-400 py-8 text-white rounded-xl box-border">
+            <h2 class="text-3xl text-center italic">Withdraw</h2>
+            <h1 class="text-4xl text-center">$<span id="total-withdraw">000</span></h1>
+        </div>
+        <!-- total balance part -->
+        <div class="basis-1/3 bg-green-400 py-8 text-white rounded-xl box-border">
+            <h2 class="text-3xl text-center italic">Balance</h2>
+            <h1 class="text-4xl text-center">$<span id="total-balance">1000</span></h1>
+        </div>
+    </div>
+
+    <!-- input field area -->
+    <div class="flex flex-row gap-3 pt-8">
+        <!-- Deposite part -->
+        <div class="basis-1/2 bg-red-400 py-10 rounded-xl items-center justify-center">
+            <h1 class="text-3xl text-white font-semibold text-center">Deposite Amount</h1>
+            <input id="input-deposit" class="w-3/4 block px-3 my-6 ml-20 h-9 rounded border-slate-400 border-2" type="text" placeholder="$ Deposit Ammount" required>
+            <h1 id="deposit-error" class="text-2xl text-white text-center"></h1>
+            <!-- despsite btn -->
+            <button id="deposite-btn"
+            class="bg-lime-400 text-black hover:bg-black hover:text-lime-400 hover:transition-all text-xl rounded-full px-5 py-2 ml-52 font-semibold ">Deposit</button>
+        </div>
+        <!-- Withdraw part -->
+        <div class="basis-1/2 bg-teal-500 py-10 rounded-xl items-center justify-center">
+            <h1 class="text-3xl text-white font-semibold text-center">Withdraw Amount</h1>
+            <input id="input-withdraw" class="w-3/4 block px-3 my-6 ml-20 h-9 rounded border-slate-400 border-2" type="text" placeholder="$ Withdraw Ammount" required>
+            <h1 id="withdraw-error" class="text-2xl text-white text-center"></h1>
+            <!-- withdraw btn -->
+            <button id="withdraw-btn"
+            class="bg-lime-400 text-black hover:bg-black hover:text-lime-400 hover:transition-all text-xl rounded-full px-5 py-2 ml-52 font-semibold ">Withdraw</button>
+        </div>
+    </div>
+    </section>
+    
+    <script src="banking.js"></script>
+</body>
+</html>
